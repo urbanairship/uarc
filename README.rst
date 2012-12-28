@@ -28,9 +28,9 @@ key and secrets as well as any number of device aliases.
 Files are loaded in the following order:
 
 1. ``/etc/ua/uarc`` - System-wide
-1. ``$HOME/.uarc`` - User-specific
-1. ``$PWD/.uarc`` - Directory-specific
-1. ``$UARC`` - Custom
+2. ``$HOME/.uarc`` - User-specific
+3. ``$PWD/.uarc`` - Directory-specific
+4. ``$UARC`` - Custom
 
 Files loaded last overwrite earlier read files.
 
