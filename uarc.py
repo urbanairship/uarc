@@ -6,8 +6,9 @@ import os
 # Filenames should go from least to most specific
 DEFAULT_FILENAMES = [
     '/etc/ua/uarc',
-    os.path.expanduser('~'),  # Cross-platform home directory resolution
-    os.path.abspath(os.curdir),
+    # Cross-platform home directory resolution
+    os.path.join(os.path.expanduser('~'), '.uarc'),
+    os.path.join(os.path.abspath(os.curdir), '.uarc'),
 ]
 
 # Append value of UARC envvar if it exists
